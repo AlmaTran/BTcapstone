@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- main css  -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Giày.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+
+                        <li>
+                            <button type="button" class="btn btn-danger">Đăng Nhập</button>
+                        </li>
+                        <li>
+                            <button class="btn btn-success" type="submit">Đăng ký</button>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="detail">
+        <div class="container">
+            <h2 class="text-center">Chi tiết sản phâm</h2>
+            <div class="detail-header">
+                <h3>Adidas Prophere</h3>
+            </div>
+            <div class="detail-body">
+                <div class="detail-body-left">
+                    <div class="lazyload-wrapper "><img src="https://shop.cyberlearn.vn/images/adidas-prophere.png"
+                            alt=""></div>
+                </div>
+                <div class="detail-body-right">
+                    <p>The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.
+
+                    </p>
+                    <p class="price-layout"><span class="price"><i class="fa-solid fa-tag"></i>$350</span><span
+                            class="like"><i class="fa-regular fa-heart "></i>Like</span></p>
+                    <h1>Size có sẵn</h1>
+                    <div class="detail-body-size">
+                        <ul>
+                            <li>36</li>
+                            <li>37</li>
+                            <li>38</li>
+                            <li>39</li>
+                            <li>40</li>
+                            <li>41</li>
+                            <li>42</li>
+                        </ul>
+                    </div>
+                    <div class="detail-body-number">
+                        <div class="detail-body-number-left">
+                            <button disabled="" class="btn">
+                                <i class="fa fa-caret-left"></i>
+                            </button><span>1</span><button class="btn">
+
+                                <i class="fa fa-caret-right"></i>
+                            </button>
+                        </div>
+                        <div class="detail-body-number-right">
+                            <button class="btn btn-brown">
+                                <i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detail-body-sold">Đã bán: <b>995</b></div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- products  -->
+    <section class="products">
+        <div class="products__feature container">
+            <h2 class="text-center mb-5">Sản phẩm của chúng tôi</h2>
+
+            <div class="row" id="DSSP">
+
+                <div class="card-item col-12 col-md-6 col-lg-4">
+                    <div class="card-item-inner">
+                        <div class="card-img">
+                            <a href="/detail/1">
+                                <div class="lazyload-wrapper text-center">
+                                    <img src="./assets/img/image 5.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class=""><a href="/detail/1">Adidas Prophere</a></h3>
+                            <p>The adidas Primeknit upper wraps the foot with a supportive fit that enhances
+                                movement.
+                                ...</p>
+                            <p style="font-size: 13px; text-align: right; padding: 0px 10px; opacity: 0.8;">Đã bán:
+                                995</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-left"><i class="fa-solid fa-cart-shopping"></i>Mua ngay</div>
+                            <div class="footer-right"><i class="fa-sharp fa-solid fa-tag"></i>$350</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-item col-12 col-md-6 col-lg-4">
+                    <div class="card-item-inner">
+                        <div class="card-img">
+                            <a href="/detail/1">
+                                <div class="lazyload-wrapper text-center">
+                                    <img src="./assets/img/image 5.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class=""><a href="/detail/1">Adidas Prophere</a></h3>
+                            <p>The adidas Primeknit upper wraps the foot with a supportive fit that enhances
+                                movement.
+                                ...</p>
+                            <p style="font-size: 13px; text-align: right; padding: 0px 10px; opacity: 0.8;">Đã bán:
+                                995</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-left"><i class="fa-solid fa-cart-shopping"></i>Mua ngay</div>
+                            <div class="footer-right"><i class="fa-sharp fa-solid fa-tag"></i>$350</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item col-12 col-md-6 col-lg-4">
+                    <div class="card-item-inner">
+                        <div class="card-img">
+                            <a href="/detail/1">
+                                <div class="lazyload-wrapper text-center">
+                                    <img src="./assets/img/image 5.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class=""><a href="/detail/1">Adidas Prophere</a></h3>
+                            <p>The adidas Primeknit upper wraps the foot with a supportive fit that enhances
+                                movement.
+                                ...</p>
+                            <p style="font-size: 13px; text-align: right; padding: 0px 10px; opacity: 0.8;">Đã bán:
+                                995</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="footer-left"><i class="fa-solid fa-cart-shopping"></i>Mua ngay</div>
+                            <div class="footer-right"><i class="fa-sharp fa-solid fa-tag"></i>$350</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <footer class="text-center">
+        <p>2023 Cybersoft All Right Reserved | Design Theme by Cao Thành Long</p>
+    </footer>
+
+    <!-- thư viện jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+    <script src="../services/callAPI.js"></script>
+    <script src="../model/SanPham.js"></script>
+    <script src="../controller/main.js"></script>
+</body>
+
+</html>

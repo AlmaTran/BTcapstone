@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  
+  header li {
+    margin: 0 20px;
+  }
+  header li a {
+    color: black;
+  }
+  
+  @media (max-width: 992px) {
+    header .navbar-nav {
+      text-align: center;
+    }
+    header button {
+      margin-bottom: 20px;
+    }
+  }
+  .carousel .carousel__item {
+    position: relative;
+  }
+  .carousel .carousel__content {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+  }
+  
+  .products {
+    background-color: pink;
+  }
+  .products .card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .products .card-item-inner {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .products .card-item-inner .card-img {
+    background-color: #4682b4;
+  }
+  .products .card-item-inner .card-body h3 {
+    padding: 0 10px;
+  }
+  .products .card-item-inner .card-body p {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .products .card-item-inner .card-footer {
+    align-items: center;
+    display: flex;
+  }
+  .products .card-item-inner .card-footer .footer-left {
+    background-color: tan;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 50%;
+  }
+  .products .card-item-inner .card-footer .footer-right {
+    background-color: #5f9ea0;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .detail {
+    background-image: linear-gradient(135deg, #ee72ae, #7478f1);
+  }
+  .detail .detail-header {
+    align-items: center;
+    display: flex;
+    padding: 10px;
+  }
+  .detail .container {
+    background-color: white;
+  }
+  .detail .detail-body {
+    display: flex;
+  }
+  .detail .detail-body-left {
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+  }
+  .detail .detail-body-left img {
+    background-color: #4682b4;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .detail .detail-body-right {
+    padding: 10px;
+    width: 60%;
+  }
+  .detail .detail-body-right p {
+    border-bottom: 1px solid #ccc;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 20px;
+    padding: 10px;
+  }
+  .detail .detail-body-right .price-layout {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .detail .detail-body-right h1 {
+    color: rgba(165, 42, 42, 0.65);
+    margin: 15px 0;
+  }
+  .detail .detail-body-right .detail-body-size ul {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+  }
+  .detail .detail-body-right .detail-body-size ul li {
+    margin: 0 10px;
+    background-color: #7478f1;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .detail .detail-body-right .detail-body-number {
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    display: flex;
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+  .detail .detail-body-right .detail-body-number span {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  .detail .detail-body-right .detail-body-number-left {
+    width: 50%;
+  }
+  .detail .detail-body-right .detail-body-number-left .btn {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 7px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .detail .detail-body-right .detail-body-number-left .btn:hover {
+    background-color: #87cefa;
+  }
+  .detail .detail-body-right .detail-body-number-right {
+    text-align: right;
+    width: 50%;
+  }
+  .detail .detail-body-right .detail-body-number-right .btn-brown {
+    background-color: brown;
+    color: #fff;
+  }
+  .detail .detail-body-right .btn:disabled,
+  .detail .detail-body-right .btn:disabled:hover {
+    background-color: #fff;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }/*# sourceMappingURL=main.css.map */

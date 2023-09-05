@@ -1,0 +1,119 @@
+.detail {
+    background-image: linear-gradient(135deg, #ee72ae, #7478f1);
+
+    .detail-header {
+        align-items: center;
+        display: flex;
+        padding: 10px;
+    }
+
+    .container {
+        background-color: white;
+    }
+
+    .detail-body {
+        display: flex;
+    }
+
+    .detail-body-left {
+        padding: 10px;
+        text-align: center;
+        width: 40%;
+
+        img {
+            background-color: #4682b4;
+            border-radius: 5px;
+            width: 100%;
+        }
+    }
+
+    .detail-body-right {
+        padding: 10px;
+        width: 60%;
+
+        p {
+            border-bottom: 1px solid #ccc;
+            color: rgba(0, 0, 0, .65);
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .price-layout {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1 {
+            color: rgba(165, 42, 42, .65);
+            margin: 15px 0;
+        }
+
+        .detail-body-size ul {
+            display: flex;
+            justify-content: start;
+            list-style: none;
+
+            li {
+                margin: 0 10px;
+                background-color: #7478f1;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+            }
+        }
+
+        .detail-body-number {
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            display: flex;
+            margin: 10px 0;
+            padding: 10px 0;
+
+            span {
+                font-size: 20px;
+                margin: 0 10px;
+            }
+        }
+
+        .detail-body-number-left {
+            width: 50%;
+
+            .btn {
+                background: #fff;
+                border: 1px solid rgba(0, 0, 0, .15);
+                border-radius: 5px;
+                color: rgba(0, 0, 0, .65);
+                cursor: pointer;
+                font-size: 16px;
+                padding: 7px 15px;
+                text-align: center;
+                transition: all .3s ease;
+            }
+
+            .btn:hover {
+                background-color: #87cefa;
+            }
+        }
+
+        .detail-body-number-right {
+            text-align: right;
+            width: 50%;
+
+            .btn-brown {
+                background-color: brown;
+                color: #fff;
+            }
+        }
+
+        .btn:disabled,
+        .btn:disabled:hover {
+            background-color: #fff;
+            cursor: not-allowed;
+            opacity: .5;
+        }
+
+    }
+}

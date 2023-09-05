@@ -1,0 +1,56 @@
+.products {
+    background-color: pink;
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-item-inner {
+        background-color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        .card-img {
+            background-color: #4682b4;
+
+        }
+
+        // body 
+        .card-body h3 {
+            padding: 0 10px;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            padding: 10px;
+        }
+        
+
+        // footer 
+        .card-footer {
+            align-items: center;
+            display: flex;
+           
+            .footer-left {
+                background-color: tan;
+                cursor: pointer;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                width: 50%;
+            }
+
+            .footer-right {
+                background-color: #5f9ea0;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                width: 50%;
+            }
+        }
+    }
+
+
+
+}
