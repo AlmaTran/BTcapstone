@@ -1,5 +1,6 @@
 function hienThiDS(mang) {
     var content = "";
+    const originUrl = window.location.origin;
 
     mang.map(function (sp) {
 
@@ -8,7 +9,7 @@ function hienThiDS(mang) {
                     <div class="card-item col-12 col-md-6 col-lg-4">
                         <div class="card-item-inner">
                             <div class="card-img">
-                                <a href="./view/chiTietSanPham.html">
+                            <a href="${originUrl}/view/chiTietSanPham.html?productId=${sp.id}">
                                     <div class="lazyload-wrapper text-center">
                                         <img src=${sp.image} 5.png" alt="" class="img-fluid">
                                     </div>
@@ -44,3 +45,5 @@ function layDanhSachSP() {
     })
 }
 layDanhSachSP()
+
+

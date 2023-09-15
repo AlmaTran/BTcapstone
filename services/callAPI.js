@@ -5,3 +5,9 @@ function CallAPI() {
     })
 
 }
+function getSP(id) {
+    return axios({
+        method: 'get',
+        url: `https://shop.cyberlearn.vn/api/Product/getbyid?id=${id}`
+    })
+}
