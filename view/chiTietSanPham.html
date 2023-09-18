@@ -54,7 +54,20 @@
     </header>
     <section class="detail">
         <div class="container">
-            <h2 class="text-center">Chi tiết sản phâm</h2>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid" bis_skin_checked="1">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                                </li>
+
+                            </ul>
+                            <div class="carts" bis_skin_checked="1">
+                                <i class="fa fa-cart-arrow-down"></i>
+                                <p class="cart__text">0</p>
+                            </div>
+                        </div>
+                    </nav>
             <div class="detail-header">
                 <h3>Adidas Prophere</h3>
             </div>
@@ -87,15 +100,16 @@
                     </div>
                     <div class="detail-body-number">
                         <div class="detail-body-number-left">
-                            <button disabled="" class="btn">
-                                <i class="fa fa-caret-left"></i>
-                            </button><span>1</span><button class="btn">
-
-                                <i class="fa fa-caret-right"></i>
-                            </button>
+                            <div class="soLuong">
+                                <button id="decreaseButton" class="btn">-</button>
+                                <div>
+                                    <p class="sl" id="quantity">1</p>
+                                </div>
+                                <button id="increaseButton" class="btn">+</button>
+                            </div>
                         </div>
                         <div class="detail-body-number-right">
-                            <button class="btn btn-brown">
+                            <button id="addToCartButton" class="btn btn-brown" data-product-id="1" data-product-price="350">
                                 <i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ
                             </button>
                         </div>
@@ -189,6 +203,38 @@
 
 
             </div>
+        </div>
+    </section>
+
+    <section class="cart">
+        <div class="closeDIV">
+            <button class="close">Close</button>
+        </div>
+
+        <h2>Cart</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="thSP">Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>SL</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+            <div class="price-total">
+                <p>Tổng tiền: <span id="tienThanhToan"></span><span>.000 đ</span></p>
+            </div>
+            <button type="button" class="btn btn-light" onclick="chotDon()">Chốt đơn</button>
+        </form>
+        <div class="my-5">
+            <p class="alert alert-success tbThanhToan" style="display: none; color: rgb(32, 161, 32); font-size: 20px; font-weight: 500;
+                ">Thanh toán thành công
+            </p>
         </div>
     </section>
     <footer class="text-center">

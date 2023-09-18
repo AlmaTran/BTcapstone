@@ -11,7 +11,7 @@ function getProductDetail() {
       console.log('view product', product)
       const size = JSON.parse(product.size);
       let sizeList = "";
-      size.map(number => sizeList += <li>${number}</li>);
+      size.map(number => sizeList += `<li>${number}</li>`);
       console.log('view size', sizeList)
       const productHtml = `
         <div class="detail-body-left">

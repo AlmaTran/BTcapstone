@@ -24,14 +24,17 @@
   header li a {
     color: black;
   }
+
   
   @media (max-width: 992px) {
     header .navbar-nav {
       text-align: center;
+
     }
     header button {
       margin-bottom: 20px;
     }
+  
   }
   .carousel .carousel__item {
     position: relative;
@@ -86,7 +89,7 @@
   }
   
   .detail {
-    background-image: linear-gradient(135deg, #ee72ae, #7478f1);
+    background-image: pink;
   }
   .detail .detail-header {
     align-items: center;
@@ -140,7 +143,13 @@
     height: 30px;
     text-align: center;
     line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
   }
+  .detail-body-size ul li:hover {
+    background-color: #272c30;
+  }
+
   .detail .detail-body-right .detail-body-number {
     align-items: center;
     border-bottom: 1px solid #ccc;
@@ -223,10 +232,39 @@
     margin: 0;
     padding: 0;
   }
-  
+  .collapse {
+    align-items: center;
+  }
   header .container {
     border-bottom: 1px solid #abb8c3;
   }
+  header .navbar-nav {
+    align-items: center;
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+.carts {
+  display: flex;
+  align-items: center; 
+  background-color: pink;
+  border-radius: 50px; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+}
+
+.fa-cart-arrow-down {
+  font-size: 20px; 
+  margin-right: 10px; 
+}
+
+.cart__text {
+  font-size: 16px;
+}
+
+
   header .header__top {
     display: flex;
     justify-content: space-between;
@@ -541,3 +579,66 @@
     visibility: visible;
     opacity: 1;
   }/*# sourceMappingURL=main.css.map */
+
+  header .container {
+    border-bottom: 1px solid #abb8c3;
+  }
+  .nav-item a {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  header .header__top {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(234, 235, 230);
+    color: white;
+    align-items: center;
+    height: 70px;
+  }
+  header .header__top h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 180px;
+    color: black;
+  }
+  header .header__top button {
+    background-color: black;
+    color: white;
+  }
+  .detail-body-number {
+    display: flex;
+    align-items: center;
+}
+
+.soLuong {
+    display: flex;
+    align-items: center;
+}
+
+.soLuong button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.sl {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* CSS cho nút "Thêm vào giỏ" */
+#addToCartButton {
+    background-color: #8B4513; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addToCartButton:hover {
+    background-color: #A0522D; /* Màu nền khi hover */
+}
