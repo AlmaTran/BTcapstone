@@ -138,36 +138,49 @@ function updateCart() {
     // Lưu giỏ hàng vào Local Storage (nếu cần)
     saveCartToLocalStorage();
 }
+// ==============================
+const iconCart = document.querySelector('.iconCart');
+const Cart = document.querySelector('.cart');
+const container = document.querySelector('.container');
+const close = document.querySelector('.close');
 
-// Hàm xóa sản phẩm khỏi giỏ hàng
-function removeFromCart(productId) {
-    // Tìm sản phẩm cần xóa trong giỏ hàng
-    const productIndex = cart.findIndex((product) => product.id === productId);
-
-    if (productIndex !== -1) {
-        // Nếu sản phẩm tồn tại, xóa khỏi giỏ hàng
-        cart.splice(productIndex, 1);
+// Bắt sự kiện khi nhấp vào biểu tượng giỏ hàng
+iconCart.addEventListener('click', function () {
+    // Kiểm tra xem giỏ hàng có đang ẩn (được đặt bằng right: -100%) hay không
+    if (Cart.style.right === '-100%') {
+        // Hiển thị giỏ hàng và thay đổi vị trí của container
+        Cart.style.right = '0';
+        container.style.transform = 'translateX(-400px)';
+    } else {
+        // Ẩn giỏ hàng và đưa container về vị trí ban đầu
+        Cart.style.right = '-100%';
+        container.style.transform = 'translateX(0)';
     }
+});
 
-    // Cập nhật giỏ hàng và tính tổng tiền
-    updateCart();
-}
+// Bắt sự kiện khi nhấp vào
+const DecreaseButton = document.getElementById('decreaseButton');
+        const IncreaseButton = document.getElementById('increaseButton');
+        const QuantityElement = document.getElementById('Quantity');
 
-// Hàm lưu giỏ hàng vào Local Storage (nếu cần)
-function saveCartToLocalStorage() {
-    localStorage.setItem("cart", JSON.stringify(cart));
-}
+        // Biến lưu giá trị số lượng
+        let Quantity = 1;
 
-// Hàm khởi tạo giỏ hàng từ Local Storage (nếu cần)
-function loadCartFromLocalStorage() {
-    const cartData = localStorage.getItem("cart");
+        // Hàm cập nhật số lượng và giao diện
+        function updateQuantity() {
+            QuantityElement.innerText = quantity;
+        }
 
-    if (cartData) {
-        cart = JSON.parse(cartData);
-        updateCart();
-    }
-}
+        // Bắt sự kiện click để tăng giảm số lượng
+        DecreaseButton.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity--;
+                updateQuantity();
+            }
+        });
 
-// Gọi hàm loadCartFromLocalStorage khi trang được tải
-loadCartFromLocalStorage();
-
+        IncreaseButton.addEventListener('click', () => {
+            quantity++;
+            updateQuantity();
+        })
+// ================================
