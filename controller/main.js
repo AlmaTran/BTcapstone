@@ -158,29 +158,5 @@ iconCart.addEventListener('click', function () {
     }
 });
 
-// Bắt sự kiện khi nhấp vào
-const DecreaseButton = document.getElementById('decreaseButton');
-        const IncreaseButton = document.getElementById('increaseButton');
-        const QuantityElement = document.getElementById('Quantity');
-
-        // Biến lưu giá trị số lượng
-        let Quantity = 1;
-
-        // Hàm cập nhật số lượng và giao diện
-        function updateQuantity() {
-            QuantityElement.innerText = quantity;
-        }
-
-        // Bắt sự kiện click để tăng giảm số lượng
-        DecreaseButton.addEventListener('click', () => {
-            if (quantity > 1) {
-                quantity--;
-                updateQuantity();
-            }
-        });
-
-        IncreaseButton.addEventListener('click', () => {
-            quantity++;
-            updateQuantity();
-        })
 // ================================
+

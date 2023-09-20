@@ -1,3 +1,75 @@
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 function getProductDetail() {
     // Get the URL parameters
     const urlParams = new URLSearchParams(window.location.search);
@@ -43,7 +115,7 @@ function getProductDetail() {
                     </button>
                 </div>
                 <div class="detail-body-number-right">
-                    <button class="btn btn-brown">
+                    <button id="addToCartButton" class="btn btn-brown">
                         <i class="fa-solid fa-cart-plus"></i>Thêm vào giỏ
                     </button>
                 </div>
@@ -53,9 +125,35 @@ function getProductDetail() {
       `;
       const detailBody = document.getElementById('detail-body');
       detailBody.innerHTML = productHtml;
+
+      const addToCartButton = document.querySelector("#addToCartButton");
+      const totalQuantityEl = document.querySelector(".totalQuantity");
+
+      addToCartButton.addEventListener("click", () => {
+        const currentTotalQuantity = Number(totalQuantityEl.textContent);
+
+        console.log(currentTotalQuantity);
+
+        totalQuantityEl.textContent = currentTotalQuantity + 1;
+      });
     }).catch((error) => {
         console.log(error);
     })
+    
+        const btnRight = document.querySelector('.btn-right');
+        const btnLeft = document.querySelector('.btn-left');
+        btnLeft.addEventListener('click',() =>{
+            const value = document.querySelector('.value');
+            value.textContent = parseInt(value.textContent) - 1;
+        })
+        btnRight.addEventListener('click',() =>{
+            const value = document.querySelector('.value');
+            value.textContent = parseInt(value.textContent) + 1;
+        })
+
   }
+  
+
+  
   
   getProductDetail();
