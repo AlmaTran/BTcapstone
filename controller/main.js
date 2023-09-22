@@ -159,4 +159,14 @@ iconCart.addEventListener('click', function () {
 });
 
 // ================================
+const btnRight = document.querySelector('.btn-right');
+const btnLeft = document.querySelector('.btn-left');
+btnLeft.addEventListener('click',() =>{
+    const value = document.querySelector('.value');
+    value.textContent = parseInt(value.textContent) - 1;
+})
+btnRight.addEventListener('click',() =>{
+    const value = document.querySelector('.value');
+    value.textContent = parseInt(value.textContent) + 1;
+})
 
